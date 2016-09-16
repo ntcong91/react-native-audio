@@ -85,7 +85,7 @@ RCT_EXPORT_METHOD(play:(NSString *)path options:(NSDictionary *)options)
   NSError *error;
 
   NSString *sessionCategory = [RCTConvert NSString:options[@"sessionCategory"]];
-  [self setSessionCategory:sessionCategory];
+  //temp rem  cong.nt [self setSessionCategory:sessionCategory];
   NSNumber *numberOfLoops = [RCTConvert NSNumber:options[@"numberOfLoops"]];
 
   _audioFileURL = [NSURL fileURLWithPath:path];
